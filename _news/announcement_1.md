@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+One paper on human mobility modeling is accepted by AAAI'24!
