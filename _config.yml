@@ -10,6 +10,7 @@ email: mc25684@um.edu.mo
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
+  <a href="https://mapmyvisitors.com/web/1bvtn"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=T5TX1MSvVWslf6cQrqIj-jwTdlN_Xvf9VA48I__9Zfs&cl=ffffff" /></a>
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
