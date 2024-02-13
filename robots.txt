@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://zhangzhaofan.github.io/sitemap.xml
