@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Received one precious offer (PhD in AI) from HKUST-GZ!
+Received one precious offer (PhD in AI) from HKUST-GZ.
