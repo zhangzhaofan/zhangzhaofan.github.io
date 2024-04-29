@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: False # crops the image to make it circular
-;more_info: >
+;more_info:
     <p>Email address: zhaofan.zhang@connect.um.edu.mo</p>
     <p>555 your office number</p>
     <p>123 your address street</p>
