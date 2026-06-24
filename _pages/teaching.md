@@ -7,5 +7,12 @@ nav: true
 nav_order: 6
 ---
 
-Waiting for updates
+## Research Service
 
+- AAAI Program Committee
+- IEEE Graduate Student Member
+
+## TA Service
+
+- 2025-26 Spring, AIAA 2711, Mathematics for AI
+- 2025-26 Fall, AIAA 1010, Academic Orientation for AI Students
