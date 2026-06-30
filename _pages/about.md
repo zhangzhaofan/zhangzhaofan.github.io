@@ -8,12 +8,10 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: False # crops the image to make it circular
-;more_info:
-    <p>zhaofan.zhang@connect.um.edu.mo</p>
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p> 
-
+;more_info: <p>zhaofan.zhang@connect.um.edu.mo</p>
+  <p>555 your office number</p>
+  <p>123 your address street</p>
+  <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
 projects: true # includes a Projects section under News on the home page
@@ -27,4 +25,3 @@ Hi, I'm Zhaofan! I am currently a second-year Ph.D. student with the <a href="ht
 <div style="text-align: center;">
   <a href="https://scholar.google.com/citations?user=ssxvQwcAAAAJ&hl=en">Google Scholar</a> &nbsp;|&nbsp; <a href="https://github.com/jeffreyzfo">GitHub</a> &nbsp;|&nbsp; <a href="{{ '/projects/' | relative_url }}">Projects</a>
 </div>
-
