@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Adaptive-Critical: Identifying Critical States for Risk-Sensitive Navigation via Distributional Reinforcement Learning"
 description: ""
 permalink: /projects/adaptive-critical/
