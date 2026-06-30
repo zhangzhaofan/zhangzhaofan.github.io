@@ -81,7 +81,17 @@
             {% if project.links %}
               <div class="links">
                 {% for link in project.links %}
-                  <a href="{{ link.url }}" class="btn btn-sm z-depth-0" target="_blank" rel="noopener noreferrer" role="button">{{ link.name }}</a>
+                  {% assign link_first_char = link.url | slice: 0 %}
+                  {% if link.url contains '://' %}
+                    <!-- 站外链接:新标签页打开 -->
+                    <a href="{{ link.url }}" class="btn btn-sm z-depth-0" target="_blank" rel="noopener noreferrer" role="button">{{ link.name }}</a>
+                  {% elsif link_first_char == '/' %}
+                    <!-- 站内页面:同标签页跳转(并兼容 baseurl) -->
+                    <a href="{{ link.url | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ link.name }}</a>
+                  {% else %}
+                    <!-- 锚点 / 占位(如 #):原样保留 -->
+                    <a href="{{ link.url }}" class="btn btn-sm z-depth-0" role="button">{{ link.name }}</a>
+                  {% endif %}
                 {% endfor %}
               </div>
             {% endif %}
