@@ -1,0 +1,85 @@
+<!-- _includes/projects_list.liquid
+     共用的 Projects 列表(首页和 /projects/ 页都引用)。
+     可选参数 include.limit：只显示前 N 个项目(首页用),不传则显示全部。 -->
+<style>
+  /* 左侧预览列：撑满整行高度（与右侧文字等高），图片垂直居中 */
+  .projects-list .project-preview-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* 预览图/视频：高度填满列高（即与右侧文字等高），保持比例不裁剪 */
+  .projects-list .preview {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .projects-list ol.bibliography li {
+    margin-bottom: 2rem;
+  }
+  .projects-list .description {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  /* 窄屏堆叠时，图片恢复自然高度，避免被压扁 */
+  @media (max-width: 575.98px) {
+    .projects-list .preview {
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+
+<div class="publications projects-list">
+<ol class="bibliography">
+{% for project in site.data.projects limit: include.limit %}
+  <li>
+    <div class="row">
+      <!-- 左侧：视频 或 图片预览 -->
+      <div class="col-sm-5 project-preview-col">
+        {% if project.video %}
+          {% if project.video contains '://' %}
+            <video class="preview z-depth-1 rounded" autoplay loop muted playsinline controls>
+              <source src="{{ project.video }}" />
+            </video>
+          {% else %}
+            <video class="preview z-depth-1 rounded" autoplay loop muted playsinline controls>
+              <source src="{{ project.video | prepend: '/assets/video/projects/' | relative_url }}" />
+            </video>
+          {% endif %}
+        {% elsif project.preview %}
+          {% if project.preview contains '://' %}
+            <img class="preview z-depth-1 rounded" src="{{ project.preview }}" alt="{{ project.title }}" />
+          {% else %}
+            <img class="preview z-depth-1 rounded" src="{{ project.preview | prepend: '/assets/img/projects/' | relative_url }}" alt="{{ project.title }}" />
+          {% endif %}
+        {% endif %}
+      </div>
+
+      <!-- 右侧：标题 / 状态 / 简介 / 链接 -->
+      <div class="col-sm-7">
+        <div class="title">{{ project.title }}</div>
+        {% if project.authors %}
+          <div class="author">{{ project.authors }}</div>
+        {% endif %}
+        {% if project.venue %}
+          <div class="periodical"><em>{{ project.venue }}</em></div>
+        {% endif %}
+        {% if project.description %}
+          <div class="periodical description">{{ project.description }}</div>
+        {% endif %}
+        {% if project.links %}
+          <div class="links">
+            {% for link in project.links %}
+              <a href="{{ link.url }}" class="btn btn-sm z-depth-0" target="_blank" rel="noopener noreferrer" role="button">{{ link.name }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </li>
+{% endfor %}
+</ol>
+</div>

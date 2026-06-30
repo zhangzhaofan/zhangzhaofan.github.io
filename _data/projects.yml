@@ -1,0 +1,33 @@
+# -----------------------------------------------------------------------------
+# Projects 列表数据
+# 在这里添加/编辑你的项目，/projects/ 页面会自动按顺序渲染成
+# “左边视频/图片 + 右边标题/简介/链接” 的 Publication 风格卡片。
+#
+# 字段说明：
+#   title:       项目标题（必填）
+#   venue:       小标题/状态行，例如 "Ongoing, 2025" 或会议名（可选，斜体显示）
+#   description: 项目简介（可选）
+#   preview:     左侧预览图（图片或 gif），放在 assets/img/projects/ 下，写文件名即可；
+#                也可以直接写完整 http(s) 链接。
+#   video:       左侧预览视频（mp4/webm），放在 assets/video/projects/ 下，写文件名即可；
+#                也可以直接写完整 http(s) 链接。若同时提供 video 与 preview，优先显示 video。
+#   links:       下方按钮列表，每个按钮包含 name(显示文字) 和 url(跳转地址)
+# -----------------------------------------------------------------------------
+
+- title: "Adaptive-Critical: Identifying Critical States for Risk-Sensitive Navigation via Distributional Reinforcement Learning"
+  authors: "<strong>Zhaofan Zhang</strong>, Sihong Xie&dagger;, Hui Xiong&dagger;"
+  venue: "IROS, 2026"
+  description: >-
+    Adaptive-Critical, a state-dependent risk-sensitive framework that transcends
+    fixed heuristics by integrating distributional criticality signals with sensory
+    cues, enabling robust navigation under partial observability and environmental
+    uncertainty.
+  preview: adaptive-critical-intro.png # assets/img/projects/ 下的预览图
+  # video: nav_demo.mp4   # 取消注释并把视频放到 assets/video/projects/ 下
+  links:
+    - name: Paper
+      url: "#"
+    - name: Code
+      url: "#"
+    - name: Project Page
+      url: "#"

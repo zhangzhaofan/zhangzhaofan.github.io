@@ -9,3 +9,5 @@ _site
 Gemfile.lock
 node_modules/
 vendor
+# local jekyll serve log
+.jekyll-serve.log
