@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, [Quantile Geometry Regularization for Distributional Reinforcement Learning](https://neurips.cc/virtual/2026/loc/sydney/poster/149758), has been accepted to **NeurIPS 2026**! It advances distributional RL from a robust quantile estimation perspective.
+One paper on quantile robustness of DistRL is accepted by [NeurIPS 2026](https://neurips.cc/virtual/2026/loc/sydney/poster/149758).
